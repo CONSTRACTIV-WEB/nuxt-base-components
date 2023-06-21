@@ -14,8 +14,7 @@
   })
 
   const { theme } = useAppConfig()
-  const styles = theme.title ? theme.title : {
-    default: 'font-primary text-bold text-xl',
-  };
-  const tc = tv(styles);
+  const tc = tv(theme.title ? theme.title : {
+    base: 'font-primary text-bold text-xl',
+  });
 </script>
