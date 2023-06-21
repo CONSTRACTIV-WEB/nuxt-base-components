@@ -13,6 +13,4 @@
     }
   })
 
-  const { theme } = useAppConfig()
-  const tc = tv(theme.heading)
 </script>
