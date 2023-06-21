@@ -17,7 +17,6 @@ const props = defineProps({
     },
     theme: {
     type: String,
-    required: true,
     },
 })
 
