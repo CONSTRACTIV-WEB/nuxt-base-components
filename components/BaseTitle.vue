@@ -1,5 +1,5 @@
 <template>
-  <component :is="tag" :class="tc()">
+  <component :is="tag" :class="tc(props.theme)">
     <slot />
   </component>
 </template>
@@ -10,6 +10,9 @@
     tag: {
       type: String,
       default: 'h2',
+    },
+    theme: {
+      type: String,
     }
   })
 
