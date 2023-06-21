@@ -1,5 +1,5 @@
 <template>
-  <component :is="tag">
+  <component :is="tag" :class="tc()">
     <slot />
   </component>
 </template>
@@ -14,5 +14,7 @@
   })
 
   const { theme } = useAppConfig()
-  const tc = tv(theme.heading)
+  const tc = tv(theme.title ? theme.title : {
+    default: 'font-primary text-bold text-xl',
+  });
 </script>
