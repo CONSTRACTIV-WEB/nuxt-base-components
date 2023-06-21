@@ -1,0 +1,12 @@
+{
+    "name": "cnst-base-components",
+    "private": true,
+    "scripts": {
+    },
+    "devDependencies": {
+    },
+    "dependencies": {
+      "tailwind-variants": "^0.1.5"
+    }
+  }
+  
