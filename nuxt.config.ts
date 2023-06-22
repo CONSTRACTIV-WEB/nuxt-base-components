@@ -1,3 +1,11 @@
-  export default defineNuxtConfig({
-    // Extending from base nuxt.config.ts!
-  })
+// https://nuxt.com/docs/api/configuration/nuxt-config
+export default defineNuxtConfig({
+  modules: [
+    '@nuxtjs/tailwindcss',
+  ],
+  tailwindcss: {
+    cssPath: '~/assets/css/main.css'
+  },
+  devtools: { enabled: true },
+  components: true
+})
