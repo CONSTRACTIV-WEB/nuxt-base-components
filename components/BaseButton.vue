@@ -1,8 +1,8 @@
 <template>
     <component
-      :is="to ? NuxtLink : 'button'"
-      :class="tc(props.theme)"
-      :to="to"
+    :is="props.to ? NuxtLink : 'button'"
+    :class="tc(props.theme)"
+    :to="props.to"
     >
     <slot />
 </component>

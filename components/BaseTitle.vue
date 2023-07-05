@@ -1,5 +1,5 @@
 <template>
-  <component :is="tag" :class="tc(props.theme)">
+  <component :is="props.tag" :class="tc(props.theme)">
     <slot />
   </component>
 </template>
