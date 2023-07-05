@@ -1,12 +1,12 @@
 <template>
   <span
-    :class="wrapper()"
+    :class="`relative block ${wrapper()}`"
   >
     <span
-      :class="ping()"
+      :class="`animate-ping absolute inline-flex h-full w-full rounded-full ${ping()}`"
     ></span>
     <span
-      :class="label()"
+      :class="`flex items-center justify-center relative ${label()}`"
       >{{ props.label }}</span
     >
   </span>
