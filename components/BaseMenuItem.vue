@@ -1,6 +1,6 @@
 <template>
   <li :role="props.role">
-    <NuxtLink :class="tc(props.theme)" :to="props.to" :activeClass="props.activeClass"
+    <NuxtLink :class="menuItem()" :to="props.to" :activeClass="props.activeClass"
       ><slot
     /></NuxtLink>
   </li>
@@ -29,4 +29,5 @@
   const tc = tv(theme?.menu ? theme.menu : {
     base: 'hover:underline',
   });
+  const { menuItem } = tc({ theme: props.theme })
 </script>

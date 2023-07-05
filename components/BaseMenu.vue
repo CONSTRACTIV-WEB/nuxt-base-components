@@ -1,5 +1,5 @@
 <template>
-  <ul :role="role" :aria-label="ariaLabel" :class="tc(props.theme)">
+  <ul :role="role" :aria-label="ariaLabel" :class="menu()">
     <BaseMenuItem
       v-if="props.data"
       v-for="(item, index) in props.data"
@@ -38,5 +38,5 @@
   const tc = tv(theme?.menu ? theme.menu : {
     base: 'flex flex-row gap-6',
   });
-  const { menu, menuItem } = tc({ theme: props.theme })
+  const { menu } = tc({ theme: props.theme })
 </script>
