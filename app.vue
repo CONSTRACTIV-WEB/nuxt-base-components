@@ -13,9 +13,9 @@
 
 <script setup>
 const test = [
-  {text: 'Test 1', to: '#hierher'},
-  {text: 'Test 2', to: '#hierher'},
-  {text: 'Test 3', to: '#hierher'},
-  {text: 'Test 4', to: '#hierher'},
+  {text: 'Test 1', to: '/andere-seite-1'},
+  {text: 'Test 2', to: '/andere-seite-2'},
+  {text: 'Test 3', to: '/andere-seite-3'},
+  {text: 'Test 4', to: '#anchor'},
 ]
 </script>
