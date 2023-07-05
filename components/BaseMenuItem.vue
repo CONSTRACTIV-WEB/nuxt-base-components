@@ -29,5 +29,5 @@
   const tc = tv(theme?.menu ? theme.menu : {
     base: 'hover:underline',
   });
-  const { menuItem } = tc({ theme: props.theme })
+  const { menuItem } = tc({ slots: 'menuItem' })
 </script>

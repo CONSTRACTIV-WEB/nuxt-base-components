@@ -38,5 +38,5 @@
   const tc = tv(theme?.menu ? theme.menu : {
     base: 'flex flex-row gap-6',
   });
-  const { menu } = tc({ theme: props.theme })
+  const { menu } = tc({ slots: 'menu' })
 </script>
