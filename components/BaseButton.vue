@@ -16,7 +16,7 @@ const props = defineProps({
     type: [String, Object],
     },
     theme: {
-    type: String,
+    type: Object,
     },
 })
 
