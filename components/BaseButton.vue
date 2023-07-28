@@ -1,7 +1,7 @@
 <template>
     <component
     :is="props.to ? NuxtLink : 'button'"
-    :class="tc(props.theme)"
+    :class="tc({ theme: props.theme })"
     :to="props.to"
     >
     <slot />
