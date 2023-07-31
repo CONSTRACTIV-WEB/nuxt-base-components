@@ -5,8 +5,6 @@
       <BasePhoneLink phoneNumber="0176/465 76 091" />
       <BaseMailLink mail="test@constractiv.de" />
       <BaseMenu :data="test" theme="primary" />
-      <BaseBadgePing label="1" />
-      <BaseBurger />
     </BaseContainer>
   </div>
 </template>
